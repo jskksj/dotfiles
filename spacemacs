@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     elm
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -50,9 +51,13 @@ values."
      ;; syntax-checking
      ;; version-control
      ;;
+     ;;
      ;; Personal layers after this point.
-     ;; add html layer
+     ;; Add html layer.
      html
+     ;; Add javascript for HTML and CSS formatting.
+     javascript
+     ;; Add Git support.
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
