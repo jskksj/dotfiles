@@ -37,8 +37,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     ;; add html layer
-     html
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
@@ -51,6 +49,10 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     ;;
+     ;; Personal layers after this point.
+     ;; add html layer
+     html
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
