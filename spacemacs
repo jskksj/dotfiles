@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     markdown
      elm
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -43,7 +44,8 @@ values."
      emacs-lisp
      ;; git
      ;; markdown
-     ;; org
+     ;; load org-mode.
+     org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -58,6 +60,7 @@ values."
      ;; Add javascript for HTML and CSS formatting.
      javascript
      ;; Add Git support.
+     git
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -142,7 +145,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 16
+                               :size 24
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -318,6 +321,13 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
+  ;; Open hyperlinks in chrome.
+  (setq browse-url-browser-function 'browse-url-generic
+    browse-url-generic-program "google-chrome")
+  (setq org-startup-truncated nil)
+  (setq org-default-notes-file (expand-file-name "~/.notes.org"))
+  ; (find-file "~/.notes.org")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

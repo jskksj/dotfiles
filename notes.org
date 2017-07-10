@@ -1,0 +1,4 @@
+* Working with org-mode capture
+  I would like to keep my notes in 'notes.org' in the dotfiles directory that is under git.  I tried setting a soft link to that file 
+
+  Line wrapping looks like it is working but the font size appears to be throwing it off, it is cutting off part of the line.
