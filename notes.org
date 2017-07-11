@@ -33,7 +33,7 @@
     : hello
 
 * Software Development
-  ** working with magit
+** working with magit
   I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.
 
 * Tasks
