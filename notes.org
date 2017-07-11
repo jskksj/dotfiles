@@ -1,6 +1,7 @@
 * Working with org-mode capture
 ** I would like to keep my notes in 'notes.org' 
    in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
+
 ** Now I need a capture mode for browser bookmarks.
    
 ** Line wrapping looks like it is working
@@ -30,6 +31,10 @@
 
     #+RESULTS:
     : hello
+
+* Software Development
+  ** working with magit
+  I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.
 
 * Tasks
 * Bookmarks
