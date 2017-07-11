@@ -36,8 +36,10 @@
 ** working with magit
   I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.
 
+*** How about an 'auto-commit' mode for selected files like Notes.
 * Tasks
 * Bookmarks
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
   https://github.com/rexim/org-cliplink
+  http://doc.norang.ca/org-mode.html#Capture
 
