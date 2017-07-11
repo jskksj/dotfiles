@@ -322,12 +322,15 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
-  ;; Open hyperlinks in chrome.
+  ;; org-mode: org-mode: Open hyperlinks in chrome.
   (setq browse-url-browser-function 'browse-url-generic
     browse-url-generic-program "google-chrome")
+  ;; org-mode: Line wrapping.
   (setq org-startup-truncated nil)
+  ;; org-mode: A soft link to 'dotfiles/notes.org' is the default file.
   (setq org-default-notes-file (expand-file-name "~/.notes.org"))
-  ; (find-file "~/.notes.org")
+  ;; org-mode: Open the default file on startup.
+  (find-file "~/.notes.org")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
