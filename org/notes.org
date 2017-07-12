@@ -6,7 +6,10 @@
    A template for bookmarks capturing has been added to .spacemacs but the file specifed does not get the data. Oddly enough it just worked.
    Here is the [[file:~/dotfiles/spacemacs::(quote%20(("b"%20"bookmark"%20entry%20(file%20(expand-file-name%20"~/.org/refile.org"))][bookmarks template.]]
 
-   Now I want to refile the bookmar but I get 
+**** Check out the org-mode tutorial.
+     https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE
+     He shows how to add a new template using the configuration system.  I just commented out the .spacemacs code for templates.
+
 ** Line wrapping looks like it is working
    but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
 
