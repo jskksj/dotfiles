@@ -1,4 +1,9 @@
 * Working with org-mode
+** I would like to keep my notes in 'notes.org' 
+   in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
+   
+   I changed my mind.  Everything include captures is in notes.org which is in it's own folder within dotfiles.  I also set a [[file:~/dotfiles/spacemacs::(setq%20notes-org%20(expand-file-name%20"~/dotfiles/org/notes.org"))][variable]] to this full path and use that variable to configure everything else.  
+
 ** Line wrapping looks like it is working
    but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
 
@@ -13,7 +18,6 @@
 
    A submodule for org-cliplinks has been added under the org-mode layer.
 
-*** How is a elisp file added in from the submodule.
 ** I wonder if elisp exercisms would be a help
 *** https://github.com/caiorss/Emacs-Elisp-Programming
     I thought Spacemacs was broken.  I opened up the elisp org-mode file and kept getting a "void variable" error when running elisp blocks.  The problem is that the src blocks have "ELISP>" prompts in them which are non executable.  Now I am trying figure out how to do a search and replace to get rid of them.  
@@ -48,6 +52,7 @@
     | b | bookmark | entry | (file (expand-file-name ~/.org/refile.org)) | * BOOKMARK %? |
 
 ** Developing spacemacs while keeping new updates from overwriting the new code.
+*** How is a elisp file added in from the submodule.
 * Tasks
 * Bookmarks
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
