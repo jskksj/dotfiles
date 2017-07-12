@@ -4,6 +4,7 @@
 
 ** Now I need a capture mode for browser bookmarks.
    A template for bookmarks capturing has been added to .spacemacs but the file specifed does not get the data.
+   [[file:~/dotfiles/spacemacs::(quote%20(("b"%20"bookmark"%20entry%20(file%20(expand-file-name%20"~/.org/refile.org"))][Bookmarks template.]]
 ** Line wrapping looks like it is working
    but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
 
