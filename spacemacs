@@ -145,7 +145,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 24
+                               :size 22
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -329,8 +329,16 @@ you should place your code here."
   (setq org-startup-truncated nil)
   ;; org-mode: A soft link to 'dotfiles/notes.org' is the default file.
   (setq org-default-notes-file (expand-file-name "~/.notes.org"))
+  ;; org-mode: Soft link .org to dotfiles/org
+  (setq org-directory "~/.org")
   ;; org-mode: Open the default file on startup.
-  (find-file "~/.notes.org")
+  (find-file "~/.org/notes.org")
+  ;; org-mode: Capture with "SPC o c".
+  (spacemacs/set-leader-keys "oc" 'org-capture)
+  ;; org-mode: Add a bookmars capture mode.
+  (setq org-capture-templates
+    (quote (("b" "bookmark" entry (file (expand-file-name "~/.org/refile.org"))
+           "* BOOKMARK %?\n%U\n"))))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
