@@ -1,6 +1,9 @@
-* Working with org-mode capture
+* Working with org-mode
+** Working with capture
 ** I would like to keep my notes in 'notes.org' 
    in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
+   
+   I changed my mind.  Everything include captures is in notes.org which is in it's own folder within dotfiles.  I also set a [[file:~/dotfiles/spacemacs::(setq%20notes-org%20(expand-file-name%20"~/dotfiles/org/notes.org"))][variable]] to this full path and use that variable to configure everything else.  
 
 ** Now I need a capture mode for browser bookmarks.
    A template for bookmarks capturing has been added to .spacemacs but the file specifed does not get the data. Oddly enough it just worked.
