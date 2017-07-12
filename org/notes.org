@@ -8,7 +8,9 @@
 
 **** Check out the org-mode tutorial.
      https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE
-     He shows how to add a new template using the configuration system.  I just commented out the .spacemacs code for templates.
+     He shows how to add a new template using the configuration system.  I just commented out the .spacemacs code for templates. Ok, I just put the code back in.  Easy customize did not seem to have that many options.  I'll have to study it further.
+
+     The capture file is now the notes.org file too.
 
 ** Line wrapping looks like it is working
    but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
