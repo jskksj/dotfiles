@@ -336,9 +336,9 @@ you should place your code here."
   ;; org-mode: Capture with "SPC o c".
   (spacemacs/set-leader-keys "oc" 'org-capture)
   ;; org-mode: Add a bookmars capture mode.
-  ;; (setq org-capture-templates
-  ;;   (quote (("b" "bookmark" entry (file (expand-file-name "~/.org/refile.org"))
-  ;;          "* BOOKMARK %?\n%U\n"))))
+  (setq org-capture-templates
+    (quote (("b" "bookmark" entry (file (expand-file-name "~/.org/refile.org"))
+           "* BOOKMARK %?\n%U\n"))))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
