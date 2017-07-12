@@ -336,21 +336,10 @@ you should place your code here."
   ;; org-mode: Capture with "SPC o c".
   (spacemacs/set-leader-keys "oc" 'org-capture)
   ;; org-mode: Add a bookmars capture mode.
-  (setq org-capture-templates
-    (quote (("b" "bookmark" entry (file (expand-file-name "~/.org/notes.org"))
-      "* BOOKMARK %?\n%U\n"))))
+  ;; (setq org-capture-templates
+  ;;   (quote (("b" "bookmark" entry (file (expand-file-name "~/.org/refile.org"))
+  ;;          "* BOOKMARK %?\n%U\n"))))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- ))
