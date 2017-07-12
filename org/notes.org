@@ -1,0 +1,55 @@
+* Working with org-mode capture
+** I would like to keep my notes in 'notes.org' 
+   in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
+
+** Now I need a capture mode for browser bookmarks.
+   A template for bookmarks capturing has been added to .spacemacs but the file specifed does not get the data.
+** Line wrapping looks like it is working
+   but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
+
+** Adding browser bookmarks to org-mode
+*** Developing spacemacs while keeping new updates from overwriting the new code.
+   I am not sure how to develop an existing spacemacs layer.  The git project for spacemacs has been cloned and a feature-bookmars branch has been put under develop.  I suppose I will have to merge in updates and then copy the modified file back into the working distribution.
+
+   A submodule for org-cliplinks has been added under the org-mode layer.
+
+*** How is a elisp file added in from the submodule.
+** I wonder if elisp exercisms would be a help
+*** https://github.com/caiorss/Emacs-Elisp-Programming
+    I thought Spacemacs was broken.  I opened up the elisp org-mode file and kept getting a "void variable" error when running elisp blocks.  The problem is that the src blocks have "ELISP>" prompts in them which are non executable.  Now I am trying figure out how to do a search and replace to get rid of them.  
+
+    I also was using the wrong VIM command for search and replace.  I should have used ":%s//g".
+*** https://joelmccracken.github.io/entries/emacs-lisp-for-hackers-next/
+    Here is a sample Hello World function.
+
+    #+BEGIN_SRC emacs-lisp
+    (defun hello-world ()
+      "Hello World")
+
+    (hello-world)
+    #+END_SRC
+
+    #+RESULTS:
+    : hello
+
+* Software Development
+** working with magit
+  I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.
+
+
+*** How about an 'auto-commit' mode for selected files like Notes.
+** eLisp
+*** Display a variables value
+    #+BEGIN_SRC emacs-lisp
+    (default-value 'org-capture-templates)
+    #+END_SRC
+
+    #+RESULTS:
+    | b | bookmark | entry | (file (expand-file-name ~/.org/refile.org)) | * BOOKMARK %? |
+
+* Tasks
+* Bookmarks
+  http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
+  https://github.com/rexim/org-cliplink
+  http://doc.norang.ca/org-mode.html#Capture
+
