@@ -12,6 +12,10 @@
 *** Now I want to refile the bookmar but I get
 ** Easy Templates
    http://orgmode.org/manual/Easy-templates.html#Easy-templates
+** Funny formating for notes.                                          :NOTE:
+ [2017-07-12 Wed 22:29]
+ [[file:~/dotfiles/org/notes.org::*Software%20Development][Software Development]]
+ 
 * Working with Spacemacs
 ** How to make spacemacs split window right automatically?
    https://github.com/syl20bnr/spacemacs/issues/5140
@@ -65,6 +69,3 @@
 ** BOOKMARK A bookmark.
  [2017-07-12 Wed 22:29]
 * NOTES
-** Funny formating for notes.                                          :NOTE:
- [2017-07-12 Wed 22:29]
- [[file:~/dotfiles/org/notes.org::*Software%20Development][Software Development]]
