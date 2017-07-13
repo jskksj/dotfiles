@@ -339,9 +339,11 @@ you should place your code here."
   (setq org-capture-templates
         (quote (("b" "bookmark" entry (file notes-org)
                  "* BOOKMARK %?\n%U\n"))))
-  (setq org-agenda-files '(notes-org))
-  (setq split-height-threshold 0)
-  (setq split-width-threshold nil)
+  ;; org-mode: Treat any files in the org-mode default folder as agendas.
+  (setq org-agenda-files notes-org)
+  ;; spacemacs: Split windows vertically by default.
+  ;; (setq split-height-threshold 0)
+  ;; (setq split-width-threshold nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
