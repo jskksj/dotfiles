@@ -338,7 +338,12 @@ you should place your code here."
   ;; org-mode: Add a bookmars capture mode.
   (setq org-capture-templates
         (quote (("b" "bookmark" entry (file notes-org)
-                 "* BOOKMARK %?\n%U\n"))))
+                 "* BOOKMARK %?\n%U\n")
+                ("n" "note" entry (file notes-org)
+                 "* %? :NOTE:\n%U\n%a\n")
+               )
+        )
+  )
   ;; org-mode: Treat any files in the org-mode default folder as agendas.
   (setq org-agenda-files notes-org)
   ;; spacemacs: Split windows vertically by default.
