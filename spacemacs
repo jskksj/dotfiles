@@ -145,7 +145,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 22
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -342,8 +342,10 @@ you should place your code here."
   ;; org-mode: Treat any files in the org-mode default folder as agendas.
   (setq org-agenda-files notes-org)
   ;; spacemacs: Split windows vertically by default.
-  ;; (setq split-height-threshold 0)
-  ;; (setq split-width-threshold nil)
+  (setq split-height-threshold nil)
+  (setq split-width-threshold 0)
+  ;; Follow symbolic links by default.
+  (setq find-file-visit-truename t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
