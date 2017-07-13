@@ -340,7 +340,8 @@ you should place your code here."
         (quote (("b" "bookmark" entry (file notes-org)
                  "* BOOKMARK %?\n%U\n"))))
   (setq org-agenda-files '(notes-org))
-  (setq split-height-threshold nil)
+  (setq split-height-threshold 0)
+  (setq split-width-threshold nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
