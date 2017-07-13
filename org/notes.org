@@ -7,30 +7,17 @@
 ** Line wrapping looks like it is working
    but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
 
-** Now I need a capture mode for browser bookmarks.
+** Now I need a capture template for browser bookmarks.
    A template for bookmarks capturing has been added to .spacemacs but the file specifed does not get the data. Oddly enough it just worked.
    Here is the [[file:~/dotfiles/spacemacs::(quote%20(("b"%20"bookmark"%20entry%20(file%20(expand-file-name%20"~/.org/refile.org"))][bookmarks template.]]
 
    Now I want to refile the bookmar but I get 
 ** Easy Templates
    http://orgmode.org/manual/Easy-templates.html#Easy-templates
-** I wonder if elisp exercisms would be a help
-*** https://github.com/caiorss/Emacs-Elisp-Programming
-    I thought Spacemacs was broken.  I opened up the elisp org-mode file and kept getting a "void variable" error when running elisp blocks.  The problem is that the src blocks have "ELISP>" prompts in them which are non executable.  Now I am trying figure out how to do a search and replace to get rid of them.  
-
-    I also was using the wrong VIM command for search and replace.  I should have used ":%s//g".
-*** https://joelmccracken.github.io/entries/emacs-lisp-for-hackers-next/
-    Here is a sample Hello World function.
-
-    #+BEGIN_SRC emacs-lisp
-    (defun hello-world ()
-      "Hello World")
-
-    (hello-world)
-    #+END_SRC
-
-    #+RESULTS:
-    : hello
+* Working with Spacemacs
+** How to make spacemacs split window right automatically?
+   https://github.com/syl20bnr/spacemacs/issues/5140
+   You can change the values of split-height-threshold and split-width-threshold. These variables decide when and how split-window-sensibly creates a new window. By default, display-buffer uses split-window-sensibly when it needs to create a new window.
 * Software Development
 ** working with magit
   I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.
@@ -52,6 +39,23 @@
    A submodule for org-cliplinks has been added under the org-mode layer.
 
 *** How is a elisp file added in from the submodule.
+** I wonder if elisp exercisms would be a help
+*** https://github.com/caiorss/Emacs-Elisp-Programming
+    I thought Spacemacs was broken.  I opened up the elisp org-mode file and kept getting a "void variable" error when running elisp blocks.  The problem is that the src blocks have "ELISP>" prompts in them which are non executable.  Now I am trying figure out how to do a search and replace to get rid of them.  
+
+    I also was using the wrong VIM command for search and replace.  I should have used ":%s//g".
+*** https://joelmccracken.github.io/entries/emacs-lisp-for-hackers-next/
+    Here is a sample Hello World function.
+
+    #+BEGIN_SRC emacs-lisp
+    (defun hello-world ()
+      "Hello World")
+
+    (hello-world)
+    #+END_SRC
+
+    #+RESULTS:
+    : hello
 
 * Tasks
 * Bookmarks

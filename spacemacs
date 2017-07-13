@@ -338,7 +338,9 @@ you should place your code here."
   ;; org-mode: Add a bookmars capture mode.
   (setq org-capture-templates
         (quote (("b" "bookmark" entry (file notes-org)
-           "* BOOKMARK %?\n%U\n"))))
+                 "* BOOKMARK %?\n%U\n"))))
+  (setq org-agenda-files '(notes-org))
+  (setq split-height-threshold nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
