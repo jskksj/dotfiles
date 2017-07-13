@@ -24,7 +24,7 @@
 
    This is really frustrating.  I have set both variables in such as to force either verticle or horizontal splits but the default behavior is unchanged.  One thing that is peculiar is that Spacemacs was spliting windows vertically by default when I first started it.  Could the split behavior be effected by the font size?
 
-   I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file.
+   I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
 * Software Development
 ** working with magit
   I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.

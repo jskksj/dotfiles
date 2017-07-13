@@ -343,7 +343,7 @@ you should place your code here."
   (setq org-agenda-files notes-org)
   ;; spacemacs: Split windows vertically by default.
   (setq split-height-threshold nil)
-  (setq split-width-threshold 0)
+  (setq split-width-threshold 80)
   ;; Follow symbolic links by default.
   (setq find-file-visit-truename t)
   )
