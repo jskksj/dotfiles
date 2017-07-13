@@ -4,17 +4,12 @@
    in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
    
    I changed my mind.  Everything include captures is in notes.org which is in it's own folder within dotfiles.  I also set a [[file:~/dotfiles/spacemacs::(setq%20notes-org%20(expand-file-name%20"~/dotfiles/org/notes.org"))][variable]] to this full path and use that variable to configure everything else.  
-<<<<<<< HEAD
 ** Line wrapping looks like it is working
    but the font size appears to be throwing it off, it is cutting off part of the line.  I just reset the font to 24.  The wrapping looks a lot better now. I also put "(setq org-startup-truncated nil)" into .spacemacs.
-=======
->>>>>>> aa76d96... Update notes.org documentation.
-
 ** Now I need a capture template for browser bookmarks.
    A template for bookmarks capturing has been added to .spacemacs but the file specifed does not get the data. Oddly enough it just worked.
    Here is the [[file:~/dotfiles/spacemacs::(quote%20(("b"%20"bookmark"%20entry%20(file%20(expand-file-name%20"~/.org/refile.org"))][bookmarks template.]]
-
-   Now I want to refile the bookmar but I get 
+*** Now I want to refile the bookmar but I get
 ** Easy Templates
    http://orgmode.org/manual/Easy-templates.html#Easy-templates
 * Working with Spacemacs
@@ -27,9 +22,7 @@
    I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
 * Software Development
 ** working with magit
-  I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status.
-
-
+  I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status. That is once the special magit buffer is up then typing a '?' will show the available commands.  
 *** How about an 'auto-commit' mode for selected files like Notes.
 ** eLisp
 *** Display a variables value
@@ -64,8 +57,6 @@
     #+RESULTS:
     : hello
 
-* Tasks
-  How now bronw cow.
 * Browser Bookmarks
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
   https://github.com/rexim/org-cliplink
