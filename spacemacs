@@ -44,11 +44,12 @@ values."
      emacs-lisp
      ;; git
      ;; markdown
-     ;; load org-mode.
+     ;; org-mode layer.
      org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'right
+            shell-enable-smart-eshell t)
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
