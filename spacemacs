@@ -337,9 +337,9 @@ you should place your code here."
   (spacemacs/set-leader-keys "oc" 'org-capture)
   ;; org-mode: Add a bookmars capture mode.
   (setq org-capture-templates
-        (quote (("b" "bookmark" entry (file+headline notes-org BOOKMARKS)
+        (quote (("b" "bookmark" entry (file+headline notes-org "BOOKMARKS")
                  "* BOOKMARK %?\n%U\n")
-                ("n" "note" entry (file+headline notes-org NOTES)
+                ("n" "note" entry (file+headline notes-org "NOTES")
                  "* %? :NOTE:\n%U\n%a\n")
                )
         )

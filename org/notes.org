@@ -71,4 +71,9 @@
   https://github.com/rexim/org-cliplink
   http://doc.norang.ca/org-mode.html#Capture
 * BOOKMARKS
+** BOOKMARK A bookmark.
+ [2017-07-12 Wed 22:29]
 * NOTES
+** Funny formating for notes.                                          :NOTE:
+ [2017-07-12 Wed 22:29]
+ [[file:~/dotfiles/org/notes.org::*Software%20Development][Software Development]]
