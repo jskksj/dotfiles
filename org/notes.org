@@ -26,6 +26,8 @@
    I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
 * Software Development 
 ** Working with JavaScript
+*** Working with Skewer mode.
+    It is installed but I do not see how to use it. It looks like you have to be in a JavaScript buffer for it to work.
 *** Installing the Spacemacs JavaScript layer
      sudo -H npm install -g tern
      ...
