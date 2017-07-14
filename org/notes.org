@@ -24,9 +24,39 @@
    This is really frustrating.  I have set both variables in such as to force either verticle or horizontal splits but the default behavior is unchanged.  One thing that is peculiar is that Spacemacs was spliting windows vertically by default when I first started it.  Could the split behavior be effected by the font size?
 
    I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
-* Software Development
+* Software Development 
+** Working with JavaScript
+*** Installing the Spacemacs JavaScript layer
+     sudo -H npm install -g tern
+     ...
+     /usr/local/bin/tern -> /usr/local/lib/node_modules/tern/bin/tern
+     /usr/local/lib
+     └── tern@0.21.0 
+
+      npm install -g js-beautify
+      ...
+      /home/kivy/.nvm/versions/node/v6.11.0/bin/css-beautify -> /home/kivy/.nvm/versions/node/v6.11.0/lib/node_modules/js-beautify/js/bin/css-beautify.js
+      /home/kivy/.nvm/versions/node/v6.11.0/bin/html-beautify -> /home/kivy/.nvm/versions/node/v6.11.0/lib/node_modules/js-beautify/js/bin/html-beautify.js
+      /home/kivy/.nvm/versions/node/v6.11.0/bin/js-beautify -> /home/kivy/.nvm/versions/node/v6.11.0/lib/node_modules/js-beautify/js/bin/js-beautify.js
+      /home/kivy/.nvm/versions/node/v6.11.0/lib
+└─┬ js-beautify@1.6.14 
+  ├─┬ config-chain@1.1.11 
+  │ ├── ini@1.3.4 
+  │ └── proto-list@1.2.4 
+  ├─┬ editorconfig@0.13.2 
+  │ ├── bluebird@3.5.0 
+  │ ├── commander@2.11.0 
+  │ ├─┬ lru-cache@3.2.0 
+  │ │ └── pseudomap@1.0.2 
+  │ └── sigmund@1.0.1 
+  ├─┬ mkdirp@0.5.1 
+  │ └── minimist@0.0.8 
+  └─┬ nopt@3.0.6 
+    └── abbrev@1.1.0
+
+     js-beautify --version
+         1.6.14
 ** working with magit
-  I could not figure out how to commit files.  It seems most of the magit commands must be invoked in the special buffer magit uses to display status. That is once the special magit buffer is up then typing a '?' will show the available commands.  
 *** How about an 'auto-commit' mode for selected files like Notes.
 ** eLisp
 *** Display a variables value
