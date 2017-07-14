@@ -56,6 +56,10 @@
 
      js-beautify --version
          1.6.14
+
+     sudo -H npm install -g eslint   
+     /usr/local/bin/eslint -> /usr/local/lib/node_modules/eslint/bin/eslint.js
+
 ** working with magit
 *** How about an 'auto-commit' mode for selected files like Notes.
 ** eLisp
