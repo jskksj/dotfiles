@@ -5,6 +5,7 @@
    "Non-existent agenda file ~/dotfiles/org/notes.org/#+TAGS: COMPUTING(c).  [R]emove from list or [A]bort?"
 
 
+   So it is a missing file? https://emacs.stackexchange.com/questions/17048/how-to-add-a-directory-to-the-org-agenda-files
 *** To get into Agenda mode
 SPC m a pops a new window with a list of agenda commands including m for search.
 ** Working with capture
