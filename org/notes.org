@@ -63,6 +63,10 @@
 
      sudo -H npm install -g eslint   
      /usr/local/bin/eslint -> /usr/local/lib/node_modules/eslint/bin/eslint.js
+*** Add a src block for JavaScript
+    #+BEGIN_SRC js
+				return "Hello, World!";
+    #+END_SRC
 ** working with magit
 *** How about an 'auto-commit' mode for selected files like Notes.
 ** eLisp
