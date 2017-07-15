@@ -1,4 +1,10 @@
-* Working with org-mode
+#+TAGS: COMPUTING(c)
+* Working with org-mode 
+** Working with tags 
+    The tags are easy enough to add but when I try to search them I get this error message:
+    "Non-existent agenda file ~/dotfiles/org/notes.org/#+TAGS: COMPUTING(c).  [R]emove from list or [A]bort?"
+*** To get into Agenda mode
+    SPC m a pops a new window with a list of agenda commands including m for search.
 ** Working with capture
 ** I would like to keep my notes in 'notes.org' 
    in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
@@ -24,10 +30,10 @@
    This is really frustrating.  I have set both variables in such as to force either verticle or horizontal splits but the default behavior is unchanged.  One thing that is peculiar is that Spacemacs was spliting windows vertically by default when I first started it.  Could the split behavior be effected by the font size?
 
    I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
-* Software Development 
+* Software Development                                                  :WIP:
 ** Working with org-modes Babel.
    From Babel's main page I downloaded an academic paper on using org-mode for ReproducibleResearch.
-** Working with JavaScript
+** Working with JavaScript                                              :WEB:
 *** Working with Skewer mode.
     It is installed but I do not see how to use it. It looks like you have to be in a JavaScript buffer for it to work.
 *** Installing the Spacemacs JavaScript layer
