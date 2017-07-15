@@ -359,6 +359,11 @@ you should place your code here."
   ;; Spacemacs: use skewer for web development.
   (add-hook 'css-mode-hook 'skewer-css-mode)
   (add-hook 'html-mode-hook 'skewer-html-mode)
+  ;; org-mode: run JavaScript in org-mode.
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((emacs-lisp . t)
+     (js . t)))
 
   )
 
