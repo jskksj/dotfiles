@@ -70,6 +70,8 @@ return "Hello, World!";
 Now why did it not return "Hello, World!"?
 ** working with magit
 *** How about an 'auto-commit' mode for selected files like Notes.
+*** Staging chunks of a diff 
+**** Stage one.
 ** eLisp
 *** Display a variables value
 #+BEGIN_SRC emacs-lisp
