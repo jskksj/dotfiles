@@ -329,10 +329,13 @@ you should place your code here."
     browse-url-generic-program "google-chrome")
   ;; org-mode: Line wrapping.
   (setq org-startup-truncated nil)
-  ;; org-mode: 'dotfiles/org/notes.org' is the default file.
-  (setq notes-org (expand-file-name "~/dotfiles/org/notes.org"))
+  ;; org-mode: Set the default org file.
+  (setq org-base (expand-file-name "~/dotfiles/org/"))
+  (setq notes-org (concat org-base "notes.org"))
   (setq org-default-notes-file notes-org)
-  (setq org-directory notes-org)
+  ;; org-mode: for agendas
+  (setq org-directory org-base)
+  (setq org-agenda-files org-directory)
   ;; org-mode: Open the default file on startup.
   (find-file notes-org)
   ;; org-mode: Capture with "SPC o c".
