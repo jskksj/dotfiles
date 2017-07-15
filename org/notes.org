@@ -3,8 +3,6 @@
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
    "Non-existent agenda file ~/dotfiles/org/notes.org/#+TAGS: COMPUTING(c).  [R]emove from list or [A]bort?"
-
-
    So it is a missing file? https://emacs.stackexchange.com/questions/17048/how-to-add-a-directory-to-the-org-agenda-files
 *** To get into Agenda mode
 SPC m a pops a new window with a list of agenda commands including m for search.
