@@ -347,7 +347,7 @@ you should place your code here."
         )
   )
   ;; org-mode: Treat any files in the org-mode default folder as agendas.
-  (setq org-agenda-files notes-org)
+  (setq org-agenda-files (expand-file-name notes-org))
   ;; Spacemacs: Split windows vertically by default.
   (setq split-height-threshold nil)
   (setq split-width-threshold 80)
