@@ -2,9 +2,13 @@
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
    "Non-existent agenda file ~/dotfiles/org/notes.org/#+TAGS: COMPUTING(c).  [R]emove from list or [A]bort?"
-   So it is a missing file? https://emacs.stackexchange.com/questions/17048/how-to-add-a-directory-to-the-org-agenda-files
+
+   Be carefull [R]emoving, it can really screw up your file.
+   So it is a missing file? I still get the error after adding notes to org-agenda-files. https://emacs.stackexchange.com/questions/17048/how-to-add-a-directory-to-the-org-agenda-files
+
 *** To get into Agenda mode
-SPC m a pops a new window with a list of agenda commands including m for search.
+    'SPC m a' pops a new window with a list of agenda commands including m for search.
+
 ** Working with capture
 ** I would like to keep my notes in 'notes.org'
 in the dotfiles directory that is under git.  I tried setting a soft link to that file. Then I added "(setq org-default-notes-file (expand-file-name "~/.notes.org"))" to .spacemacs but capture mode still seems to use a file under ".emacs.d".  Ok, I lied, it seems to be working now with the first task entered in capture mode.
