@@ -348,11 +348,17 @@ you should place your code here."
   )
   ;; org-mode: Treat any files in the org-mode default folder as agendas.
   (setq org-agenda-files notes-org)
-  ;; spacemacs: Split windows vertically by default.
+  ;; Spacemacs: Split windows vertically by default.
   (setq split-height-threshold nil)
   (setq split-width-threshold 80)
-  ;; Follow symbolic links by default.
+  ;; Spacemacs: Follow symbolic links by default.
   (setq find-file-visit-truename t)
+  ;; Spacemacs: change font size with the keyboard
+  (define-key global-map (kbd "C-=") 'text-scale-increase)
+  (define-key global-map (kbd "C--") 'text-scale-decrease)
+  ;; Spacemacs: use skewer for web development.
+  (add-hook 'css-mode-hook 'skewer-css-mode)
+  (add-hook 'html-mode-hook 'skewer-html-mode)
 
   )
 
