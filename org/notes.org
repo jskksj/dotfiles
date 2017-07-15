@@ -67,6 +67,10 @@
     #+BEGIN_SRC js
 				return "Hello, World!";
     #+END_SRC
+
+    #+RESULTS:
+    : Hello
+    Now why did it not return "Hello, World!"?
 ** working with magit
 *** How about an 'auto-commit' mode for selected files like Notes.
 ** eLisp
