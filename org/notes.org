@@ -1,4 +1,3 @@
-~/dotfiles/org/notes.org
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
