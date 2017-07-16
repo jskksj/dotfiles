@@ -336,7 +336,7 @@ you should place your code here."
   (setq org-default-notes-file notes-org)
   ;; org-mode: for agendas
   (setq org-directory org-base)
-  ;; (setq org-agenda-files (list notes-org agenda-org))
+  (setq org-agenda-files (list notes-org agenda-org))
   ;; org-mode: Open the default file on startup.
   (find-file notes-org)
   ;; org-mode: Capture with "SPC o c".
