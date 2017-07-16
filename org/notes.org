@@ -6,6 +6,9 @@
    Be carefull [R]emoving, it can really screw up your file.
    So it is a missing file? I still get the error after adding notes to org-agenda-files. https://emacs.stackexchange.com/questions/17048/how-to-add-a-directory-to-the-org-agenda-files
 
+   org-agenda-files has to be set just right, the following finally worked.:
+      (setq org-agenda-files (list notes-org agenda-org))
+
 *** To get into Agenda mode
     'SPC m a' pops a new window with a list of agenda commands including m for search.
 
