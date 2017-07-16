@@ -332,10 +332,11 @@ you should place your code here."
   ;; org-mode: Set the default org file.
   (setq org-base (expand-file-name "~/dotfiles/org/"))
   (setq notes-org (concat org-base "notes.org"))
+  (setq agenda-org (concat org-base "agenda.org"))
   (setq org-default-notes-file notes-org)
   ;; org-mode: for agendas
   (setq org-directory org-base)
-  (setq org-agenda-files (list org-base))
+  (setq org-agenda-files (list notes-org agenda-org))
   ;; org-mode: Open the default file on startup.
   (find-file notes-org)
   ;; org-mode: Capture with "SPC o c".
