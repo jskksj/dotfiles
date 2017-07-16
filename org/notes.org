@@ -9,6 +9,8 @@
    org-agenda-files has to be set just right, the following finally worked.:
       (setq org-agenda-files (list notes-org agenda-org))
 
+   I think I might try again with a default installation of emacs.  I can experiment using git and go through every combination of values for org-agenda-files.
+
 *** To get into Agenda mode
     'SPC m a' pops a new window with a list of agenda commands including m for search.
 
