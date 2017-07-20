@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     python
      markdown
      elm
      ;; ----------------------------------------------------------------
@@ -365,7 +366,10 @@ you should place your code here."
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((emacs-lisp . t)
-     (js . t)))
+     (js . t)
+     (python . t)
+     )
+   )
 
   )
 
