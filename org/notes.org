@@ -33,6 +33,21 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
 ** Funny formating for notes.                                          :NOTE:
 [2017-07-12 Wed 22:29]
 [[file:~/dotfiles/org/notes.org::*Software%20Development][Software Development]]
+** Test stow
+   #+BEGIN_SRC sh
+   mkdir -p stowdir/shell/level1 stowdir/shell/level2
+   ls -al
+   #+END_SRC
+
+   #+RESULTS:
+   | total      | 12 |      |        |      |     |    |       |       |
+   | drwxr-xr-x |  3 | kivy | vboxsf | 4096 | Jul | 19 | 22:47 | 0     |
+   | drwxr-xr-x |  4 | kivy | vboxsf | 4096 | Jul | 19 | 22:47 | ..    |
+   | drwxr-xr-x |  4 | kivy | vboxsf | 4096 | Jul | 19 | 22:47 | shell |
+
+   #+BEGIN_SRC sh
+   
+   #+END_SRC
 * Working with Spacemacs
 ** How to make spacemacs split window right automatically?
    https://github.com/syl20bnr/spacemacs/issues/5140
