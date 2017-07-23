@@ -40,7 +40,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     ;; auto-completion
+     auto-completion
      ;; better-defaults
      emacs-lisp
      ;; git
@@ -52,7 +52,7 @@ values."
             shell-default-position 'right
             shell-enable-smart-eshell t)
      ;; spell-checking
-     ;; syntax-checking
+     syntax-checking
      ;; version-control
      ;;
      ;;
