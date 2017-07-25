@@ -1,1 +1,4 @@
 bin
+*.deb
+description-pack
+configure-output
