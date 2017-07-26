@@ -1,3 +1,5 @@
 [user]
 	name = John Krumpotick
 	email = softwaredevelopment@simplexapparati.com
+[credential]
+	helper = cache --timeout=3600
