@@ -16,7 +16,7 @@
    sh install-emacs.sh
    sh install-spacemacs.sh
 
-   The repository will now contain the latest version of git but the package information will still show the default version.
+   The new git repository will now contain the latest version of git but the package information will still show the default version.
    add-apt-repository -y ppa:git-core/ppa
    apt-get -y update
    apt-get -y install git
@@ -28,7 +28,10 @@
    I did try running emacs from git but the newest version does not work with spacemacs.
    apt-get install -y emacs
 
+   I ran emacs to install spacemacs.
    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+   And then reran emacs to update with my own init file.
+   ln -s ~/.spacemacs ~/dotfiles/spacemacs
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
