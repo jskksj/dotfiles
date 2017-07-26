@@ -1,1 +1,6 @@
 ssh-keygen -t rsa -b 4096 -C "softwaredevelopment@simplexapparati.com"
+
+eval "$(ssh-agent -s)"
+# Agent pid 7585
+ssh-add ~/.ssh/id_rsa
+# Identity added: /home/dev/.ssh/id_rsa (/home/dev/.ssh/id_rsa)
