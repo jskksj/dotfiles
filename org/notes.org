@@ -5,6 +5,8 @@
   I find [[http://keifer.link/projects/dotfiles/dotfiles.html][this]] guys dotfiles org file very attractive, I do not have his css though. And finally I think [[/home/kivy/GitHub/dotfiles-ng][this guy]] has a nice reference to actually using org-mode to organize dotfiles.
 ** GitHub SSH configuration
    https://help.github.com/articles/connecting-to-github-with-ssh/
+   GitHub help does not seem to tell everything needed to establish an SSH connection.
+   https://help.github.com/articles/caching-your-github-password-in-git/
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
