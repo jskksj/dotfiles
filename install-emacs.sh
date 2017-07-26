@@ -1,4 +1,5 @@
-git clone https://github.com/emacs-mirror/emacs.git ~/GitHub/emacs
+#git clone https://github.com/emacs-mirror/emacs.git ~/GitHub/emacs
 
-sudo -H sh ./install-emacs-sudo.sh
-sh ./install-emacs-build.sh
+#sudo -H sh ./install-emacs-sudo.sh
+#sh ./install-emacs-build.sh
+apt-get install -y emacs
