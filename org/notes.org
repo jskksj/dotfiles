@@ -17,9 +17,12 @@
    sh install-spacemacs.sh
 
    The new git repository will now contain the latest version of git but the package information will still show the default version.
+   *note* now that I have rebooted it does appear to show the proper version number.
    add-apt-repository -y ppa:git-core/ppa
    apt-get -y update
    apt-get -y install git
+   dpkg -l git
+   ii  git                               1:2.13.0-0ppa1~ubuntu amd64                 fast, scalable, distributed revision control system
    
    I still need to actually use stow, but I might as well have it on the system.
    apt-get -y update
