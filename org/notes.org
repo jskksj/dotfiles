@@ -3,6 +3,8 @@
   I have been following some blogs on setting ones dot files up in a well organzied way.  There is a program called [[https://www.gnu.org/software/stow/][stow]], which seems to be just the right thing to automate soft links in the dotfiles folder. 
 
   I find [[http://keifer.link/projects/dotfiles/dotfiles.html][this]] guys dotfiles org file very attractive, I do not have his css though. And finally I think [[/home/kivy/GitHub/dotfiles-ng][this guy]] has a nice reference to actually using org-mode to organize dotfiles.
+** GitHub SSH configuration
+   https://help.github.com/articles/connecting-to-github-with-ssh/
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
