@@ -9,6 +9,26 @@
    https://help.github.com/articles/connecting-to-github-with-ssh/
    GitHub help does not seem to tell everything needed to establish an SSH connection.
    https://help.github.com/articles/caching-your-github-password-in-git/
+** Run the install files in this order
+   The following shell scripts just call other shell scripts which do the work.
+   sh install-git-ppa.sh
+   sh install-stow.sh
+   sh install-emacs.sh
+   sh install-spacemacs.sh
+
+   The repository will now contain the latest version of git but the package information will still show the default version.
+   add-apt-repository -y ppa:git-core/ppa
+   apt-get -y update
+   apt-get -y install git
+   
+   I still need to use stow but I might as well have it on the system.
+   apt-get -y update
+   apt-get -y install stow
+
+   I did try running emacs from git but the newest version does not work with spacemacs.
+   apt-get install -y emacs
+
+   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
