@@ -44,6 +44,11 @@
    npm install git://github.com/adobe-fonts/source-code-pro.git#release
 
    ln -s ~/node_modules/source-code-pro/ ~/.fonts
+
+   Now that npm is running install the various libraries needed for HTML and JavaScript development.  I had to symlink each executable directly into ~/bin/. I need to come up with something better.
+   npm install -g tern
+   npm install -g js-beautify
+   npm install -g jshint
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
