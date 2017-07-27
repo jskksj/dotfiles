@@ -35,6 +35,13 @@
    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
    And then reran emacs to update with my own init file.
    ln -s ~/.spacemacs ~/dotfiles/spacemacs
+
+   node.js has been install from the tarball on nodejs.org.  I then symlinked the binarys in the tarball bin to my ~/bin/ folder.
+
+   Source Code Pro font installation.
+   npm install git://github.com/adobe-fonts/source-code-pro.git#release
+
+   ln -s ~/node_modules/source-code-pro/ ~/.fonts
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
