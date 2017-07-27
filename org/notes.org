@@ -1,6 +1,8 @@
 * Entrepreneurship
   Julian Shapiro of Bell Curve, Indie Hackers #017
   https://www.indiehackers.com/podcast/017-julian-shapiro-of-bell-curve
+** Finding Business Idea's
+   Look in the support forums for other software applications and see if you can solve peoples problems.
 * Dotfiles Organization
   I have been following some blogs on setting ones dot files up in a well organzied way.  There is a program called [[https://www.gnu.org/software/stow/][stow]], which seems to be just the right thing to automate soft links in the dotfiles folder. 
 
