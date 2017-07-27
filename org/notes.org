@@ -28,7 +28,7 @@
    apt-get -y update
    apt-get -y install stow
 
-   I did try running emacs from git but the newest version does not work with spacemacs.
+   I did try running the latest emacs from git but the newest version does not work with spacemacs.
    apt-get install -y emacs
 
    I ran emacs to install spacemacs.
