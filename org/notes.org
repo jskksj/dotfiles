@@ -176,6 +176,9 @@ Here is a sample Hello World function.
 : hello
 ** The Web Developer Bootcamp
   [[/home/kivy/GitHub/WebDeveloperBootcamp/]]
+** design-develop-killer-websites-html5-css3
+  [[/home/dev/GitHub/design-develop-killer-websites-html5-css3][design-develop-killer-websites-html5-css3]]
+
 * Browser Bookmarks
 http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
 https://github.com/rexim/org-cliplink
