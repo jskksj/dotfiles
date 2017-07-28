@@ -12,43 +12,38 @@
    GitHub help does not seem to tell everything needed to establish an SSH connection.
    https://help.github.com/articles/caching-your-github-password-in-git/
 ** Run the install files in this order
-   The following shell scripts just call other shell scripts which do the work.
-   sh install-git-ppa.sh
-   sh install-stow.sh
-   sh install-emacs.sh
-   sh install-spacemacs.sh
+*** The following shell scripts just call other shell scripts which do the work.
+    sh install-git-ppa.sh
+    sh install-stow.sh
+    sh install-emacs.sh
+    sh install-spacemacs.sh
+*** The new git repository will now contain the latest version of git but the package information will still show the default version.
+    *note* now that I have rebooted it does appear to show the proper version number.
+    add-apt-repository -y ppa:git-core/ppa
+    apt-get -y update
+    apt-get -y install git
+    dpkg -l git
+    ii  git                               1:2.13.0-0ppa1~ubuntu amd64                 fast, scalable, distributed revision control system
+*** I still need to actually use stow, but I might as well have it on the system.
+    apt-get -y update
+    apt-get -y install stow
+*** I did try running the latest emacs from git but the newest version does not work with spacemacs.
+    apt-get install -y emacs
+*** I ran emacs to install spacemacs.
+    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+    And then reran emacs to update with my own init file.
+    ln -s ~/.spacemacs ~/dotfiles/spacemacs
 
-   The new git repository will now contain the latest version of git but the package information will still show the default version.
-   *note* now that I have rebooted it does appear to show the proper version number.
-   add-apt-repository -y ppa:git-core/ppa
-   apt-get -y update
-   apt-get -y install git
-   dpkg -l git
-   ii  git                               1:2.13.0-0ppa1~ubuntu amd64                 fast, scalable, distributed revision control system
-   
-   I still need to actually use stow, but I might as well have it on the system.
-   apt-get -y update
-   apt-get -y install stow
+    node.js has been install from the tarball on nodejs.org.  I then symlinked the binarys in the tarball bin to my ~/bin/ folder.
+*** Source Code Pro font installation.
+    npm install git://github.com/adobe-fonts/source-code-pro.git#release
 
-   I did try running the latest emacs from git but the newest version does not work with spacemacs.
-   apt-get install -y emacs
-
-   I ran emacs to install spacemacs.
-   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-   And then reran emacs to update with my own init file.
-   ln -s ~/.spacemacs ~/dotfiles/spacemacs
-
-   node.js has been install from the tarball on nodejs.org.  I then symlinked the binarys in the tarball bin to my ~/bin/ folder.
-
-   Source Code Pro font installation.
-   npm install git://github.com/adobe-fonts/source-code-pro.git#release
-
-   ln -s ~/node_modules/source-code-pro/ ~/.fonts
-
-   Now that npm is running install the various libraries needed for HTML and JavaScript development.  I had to symlink each executable directly into ~/bin/. I need to come up with something better.
-   npm install -g tern
-   npm install -g js-beautify
-   npm install -g jshint
+    ln -s ~/node_modules/source-code-pro/ ~/.fonts
+*** Now that npm is running install the various libraries needed for HTML and JavaScript development.
+    I had to symlink each executable directly into ~/bin/. I need to come up with something better.
+    npm install -g tern
+    npm install -g js-beautify
+    npm install -g jshint
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
