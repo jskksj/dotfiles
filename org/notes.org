@@ -179,7 +179,13 @@ Here is a sample Hello World function.
 ** design-develop-killer-websites-html5-css3
   [[/home/dev/GitHub/design-develop-killer-websites-html5-css3][design-develop-killer-websites-html5-css3]]
 
+* Working with HTML5/CSS3
+** Beware of CSS colors
+   I made the mistake of using a color name instead of a specifed color and I did not get a background for my button.
+   https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
 * Browser Bookmarks
+
+* 
 http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
 https://github.com/rexim/org-cliplink
 http://doc.norang.ca/org-mode.html#Capture
