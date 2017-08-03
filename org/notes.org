@@ -186,10 +186,9 @@ Here is a sample Hello World function.
    https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
 * Browser Bookmarks
 
-* 
-http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
-https://github.com/rexim/org-cliplink
-http://doc.norang.ca/org-mode.html#Capture
+  http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
+  https://github.com/rexim/org-cliplink
+  http://doc.norang.ca/org-mode.html#Capture
 * Open Source Business
 ** Content Marketing
 ** Nathan Barry convertkit blog                                        :NOTE:
