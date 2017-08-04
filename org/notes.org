@@ -50,6 +50,7 @@
     npm install -g jshint
 *** Install elm just for kicks.
     npm install -g elm
+    After that softlink all the elm executables to ~/bin/
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
@@ -189,6 +190,8 @@ Here is a sample Hello World function.
 ** Beware of CSS colors
    I made the mistake of using a color name instead of a specifed color and I did not get a background for my button.
    https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
+** &emdash; was working
+   so I had to use the &#8212; entity code.
 * Browser Bookmarks
 
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
