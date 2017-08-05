@@ -52,7 +52,16 @@
     npm install -g elm
     After that softlink all the elm executables to ~/bin/
 *** I decided to install the Brackets Editor
+    Ok, now that I have the electron version running, I cannot access the live preview feature.  I may just uninstall Brackets in the end.
     http://brackets.io/
+    There is an error message saying a dependancy cannot be found: libgcrypt11, all I could find was: libgcrypt11-dev, which did not do the trick either.
+    This link: http://www.linuxandubuntu.com/home/solved-adobe-bracket-is-not-installing-in-ubuntu-1510-due-to-missing-dependency-libgcrypt11, has a download link to the correct Debian package, after that it found and installed libcurl.
+**** I forgot that the standard brackets install has a problem with ui font size in linux.  
+     I tried an extension that is supposed to help but all it did was make the sidebar font way too big.  Then I found https://github.com/zaggino/brackets-electron/releases, it looks like it is a few minor revisions behind the official release but I think this is what worked for me the last time I installed Brackets.
+
+**** Installing extensions.
+***** The first extension I installed was Vimderbar.
+      Do not forget to enable it under 'View'.
 * Working with org-mode
 ** Working with tags
    The tags are easy enough to add but when I try to search them I get this error message:
