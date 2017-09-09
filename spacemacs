@@ -368,6 +368,7 @@ you should place your code here."
    '((emacs-lisp . t)
      (js . t)
      (python . t)
+     (css . t)
      )
    )
 
