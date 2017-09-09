@@ -351,9 +351,11 @@ you should place your code here."
                )
         )
   )
-  ;; org-mode: html output
-  (setq org-html-preamble nil)
-  (setq org-html-postamble nil)
+  ;; org-mode: html disable output
+  ;; I will use these later, are they causing magit errors?
+  ;; (setq org-html-preamble nil)
+  ;; (setq org-html-postamble nil)
+
   ;; Spacemacs: Split windows vertically by default.
   (setq split-height-threshold nil)
   (setq split-width-threshold 80)

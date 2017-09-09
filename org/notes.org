@@ -109,8 +109,10 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
    
    #+END_SRC
 ** org-mode HTML5 export
+** It looks like it is not practical to write literate HTML code.
 *** Constructing a basic template
     I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings   
+    
 * Working with Spacemacs
 ** How to make spacemacs split window right automatically?
    https://github.com/syl20bnr/spacemacs/issues/5140
@@ -119,7 +121,6 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
    This is really frustrating.  I have set both variables in such as to force either verticle or horizontal splits but the default behavior is unchanged.  One thing that is peculiar is that Spacemacs was spliting windows vertically by default when I first started it.  Could the split behavior be effected by the font size?
 
    I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
-
 * Software Development                                                  :WIP:
 ** Working with org-modes Babel.
 From Babel's main page I downloaded an academic paper on using org-mode for ReproducibleResearch.
@@ -199,14 +200,13 @@ Here is a sample Hello World function.
   [[/home/kivy/GitHub/WebDeveloperBootcamp/]]
 ** design-develop-killer-websites-html5-css3
    [[/home/dev/GitHub/design-develop-killer-websites-html5-css3][design-develop-killer-websites-html5-css3]]
-
-* Working with HTML5/CSS3
-** Beware of CSS colors
-   I made the mistake of using a color name instead of a specifed color and I did not get a background for my button.
-   https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
-** &emdash; was working
-   so I had to use the &#8212; entity code.
-*** Interactive Comic HTML5/CSS3
+** Working with HTML5/CSS3
+*** Beware of CSS colors
+    I made the mistake of using a color name instead of a specifed color and I did not get a background for my button.
+    https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
+*** &emdash; was working
+    so I had to use the &#8212; entity code.
+**** Interactive Comic HTML5/CSS3
     
 * Browser Bookmarks
 
