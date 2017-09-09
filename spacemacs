@@ -147,7 +147,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 16
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -351,6 +351,9 @@ you should place your code here."
                )
         )
   )
+  ;; org-mode: html output
+  (setq org-html-preamble nil)
+  (setq org-html-postamble nil)
   ;; Spacemacs: Split windows vertically by default.
   (setq split-height-threshold nil)
   (setq split-width-threshold 80)
