@@ -110,7 +110,8 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
    #+END_SRC
 ** org-mode HTML5 export
 *** Constructing a basic template
-    I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings   
+    I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings 
+  By default there is a lot added to an html file that I wish to get rid of, let's start with a blank file and build up from there.
 * Working with Spacemacs
 ** How to make spacemacs split window right automatically?
    https://github.com/syl20bnr/spacemacs/issues/5140
@@ -200,7 +201,7 @@ Here is a sample Hello World function.
 ** design-develop-killer-websites-html5-css3
    [[/home/dev/GitHub/design-develop-killer-websites-html5-css3][design-develop-killer-websites-html5-css3]]
 
-* Working with HTML5/CSS3
+** Working with HTML5/CSS3
 ** Beware of CSS colors
    I made the mistake of using a color name instead of a specifed color and I did not get a background for my button.
    https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
