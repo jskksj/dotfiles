@@ -203,6 +203,8 @@ Here is a sample Hello World function.
    https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/learn/v4/t/lecture/2619752?start=0
 ** &emdash; was working
    so I had to use the &#8212; entity code.
+*** Interactive Comic HTML5/CSS3
+    
 * Browser Bookmarks
 
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
