@@ -208,6 +208,12 @@ Here is a sample Hello World function.
     so I had to use the &#8212; entity code.
 **** Interactive Comic HTML5/CSS3
     
+*** clearfix is bizare.
+    https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+** Writing Browser Extensions
+*** References
+    https://developer.chrome.com/extensions Chrome Dev Tools tutorials
+    https://developer.mozilla.org/en-US/Add-ons/WebExtensions MDN WebExtensions
 * Browser Bookmarks
 
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
