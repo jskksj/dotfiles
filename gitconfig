@@ -3,3 +3,5 @@
 	email = softwaredevelopment@simplexapparati.com
 [credential]
 	helper = cache --timeout=10800
+[core]
+	editor = vi
