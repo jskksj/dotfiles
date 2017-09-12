@@ -200,6 +200,8 @@ Here is a sample Hello World function.
   [[/home/kivy/GitHub/WebDeveloperBootcamp/]]
 ** design-develop-killer-websites-html5-css3
    [[/home/dev/GitHub/design-develop-killer-websites-html5-css3][design-develop-killer-websites-html5-css3]]
+** Web apps are not real applications; they are really websites that, 
+   in many ways, look and feel like native applications, but are not [[https://www.nngroup.com/articles/mobile-native-apps/][implemented]] as such.
 ** Working with HTML5/CSS3
 *** Beware of CSS colors
     I made the mistake of using a color name instead of a specifed color and I did not get a background for my button.
@@ -214,6 +216,8 @@ Here is a sample Hello World function.
 *** References
     https://developer.chrome.com/extensions Chrome Dev Tools tutorials
     https://developer.mozilla.org/en-US/Add-ons/WebExtensions MDN WebExtensions
+*** Google Chrome Getting Started
+    
 * Browser Bookmarks
 
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
