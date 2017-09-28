@@ -1,0 +1,92 @@
+#!/usr/bin/env sh
+
+## up to date git
+## https://launchpad.net/~git-core/+archive/ubuntu/ppa
+#apt-add-repository -y ppa:git-core/ppa
+
+## place holder
+APPLICATIONS=""
+
+## basic applications for editing and installing other stuff
+#APPLICATIONS="$APPLICATIONS git vim curl"
+APPLICATIONS="$APPLICATIONS git curl"
+
+## Python 
+#APPLICATIONS="$APPLICATIONS python-dev python-pip python3-pip build-essential cmake"
+#APPLICATIONS="$APPLICATIONS python-dev python-pip python3-pip python3-dev build-essential cmake python3-kivy python-kivy-examples autoconf git libbsd-dev freeglut3-dev"
+
+## Python3 global tkinter support
+#APPLICATIONS="$APPLICATIONS python3-tk"
+
+## cookiecutter needs to be global to install cookies
+#pip install cookiecutter
+## numpy is global to compile OpenCV
+#pip3 install numpy
+
+## OpenCV
+APPLICATIONS="$APPLICATIONS libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev"
+APPLICATIONS="$APPLICATIONS make libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncurses5-dev"
+APPLICATIONS="$APPLICATIONS libavcodec-dev libavformat-dev libswscale-dev libv4l-dev"
+APPLICATIONS="$APPLICATIONS libgtk2.0-dev libatlas-base-dev gfortran"
+APPLICATIONS="$APPLICATIONS checkinstall"
+
+
+#For kivy and python3, but do not install python3-kivy if intending to use kivy with pyenv, use pip3 install kivy only.
+APPLICATIONS="apt-get install python-setuptools python-pygame python-opengl python-gst0.10 python-enchant gstreamer0.10-plugins-good \ 
+python-dev build-essential libgl1-mesa-dev libgles2-mesa-dev zlib1g-dev"
+
+#Dependencies with SDL2
+#Ubuntu example
+
+#In the following command use “python” and “python-dev” for Python 2, or “python3” and “python3-dev” for Python 3.
+# Install necessary system packages
+sudo apt-get install -y \
+    python-pip \
+    build-essential \
+    mercurial \
+    git \
+    python \
+    python-dev \
+    ffmpeg \
+    libsdl-image1.2-dev \
+    libsdl-mixer1.2-dev \
+    libsdl-ttf2.0-dev \
+    libsmpeg-dev \
+    libsdl1.2-dev \
+    libportmidi-dev \
+    libswscale-dev \
+    libavformat-dev \
+    libavcodec-dev \
+    zlib1g-dev
+
+#pip3 install Cython==0.23
+
+# pygame is not needed when SDL2 above is installed globaly.
+
+# If you want to install pygame backend instead of sdl2
+# you can install pygame using command below and enforce using
+# export USE_SDL2=0. If kivy's setup can't find sdl2 libs it will
+# automatically set this value to 0 then try to build using pygame.
+pip install hg+http://bitbucket.org/pygame/pygame
+
+apt-get update
+apt-get install -y $APPLICATIONS
+
+## Setup soft links to bashrc and vimrc
+#sudo bin/mklinks
+
+## Install pyenv: https://github.com/yyuu/pyenv-installer
+#curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+## The script is run by sudo and sets the wrong owner on pyenv
+#chown -hR jsk:jsk ~/.pyenv/
+#/home/jsk/.pyenv/libexec/pyenv update
+
+## pyenv virtualenv installation
+#git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+#chown -hR jsk:jsk ~/.pyenv/
+
+#mkdir pysh
+#pyenv virtualenv system pysh
+#cd pysh
+#pyenv install 3.3.6 3.4.4 3.5.1 pypy-4.0.1

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Checkout desired tag, see "git tag"
+cd ~/GitHub/opencv/
+git checkout ${1}
+
+cd ~/GitHub/opencv_contrib/
+git checkout ${1}

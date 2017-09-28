@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+## These two packages are global, PIP_REQUIRE_VIRTUALENV=true is in bashrc
+#pip install ipython
+#pip install virtualenv

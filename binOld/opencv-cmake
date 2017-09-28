@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+#cd ~/GitHub/opencv/
+#mkdir OpenCV_3.1.0
+#git checkout 3.1.0
+#cd OpenCV_3.1.0
+## INSTALL_C_EXAMPLES=OFF for 3.1.0
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+      	-D CMAKE_INSTALL_PREFIX=/usr/local \
+      	-D INSTALL_C_EXAMPLES=OFF \
+      	-D INSTALL_PYTHON_EXAMPLES=ON \
+      	-D OPENCV_EXTRA_MODULES_PATH=~/GitHub/opencv_contrib/modules/ \
+       	-D BUILD_DOCS=OFF \
+       	-D BUILD_EXAMPLES=ON ..
+
+#checkinstall
+# Done. The new package has been installed and saved to
+#
+#  /home/jsk/GitHub/opencv/OpenCV_3.1.0/opencv-3.1.0_20160117-1_amd64.deb
+#
+#   You can remove it from your system anytime using: 
+#
+#         dpkg -r opencv-3.1.0
+#ldconfig

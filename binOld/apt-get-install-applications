@@ -1,0 +1,54 @@
+#!/usr/bin/env sh
+
+## up to date git
+## https://launchpad.net/~git-core/+archive/ubuntu/ppa
+#apt-add-repository -y ppa:git-core/ppa
+
+## place holder
+APPLICATIONS=""
+
+## basic applications for editing and installing other stuff
+#APPLICATIONS="$APPLICATIONS git vim curl"
+
+## Python 
+#APPLICATIONS="$APPLICATIONS python-dev python-pip python3-pip build-essential cmake"
+#APPLICATIONS="$APPLICATIONS python-dev python-pip python3-pip python3-dev python3-numpy"
+
+## Python3 global tkinter support
+#APPLICATIONS="$APPLICATIONS python3-tk"
+
+## cookiecutter needs to be global to install cookies
+#pip install cookiecutter
+## numpy is global to compile OpenCV
+#pip3 install numpy
+
+## OpenCV
+#APPLICATIONS="$APPLICATIONS libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev"
+#APPLICATIONS="$APPLICATIONS make libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncurses5-dev"
+#APPLICATIONS="$APPLICATIONS libavcodec-dev libavformat-dev libswscale-dev libv4l-dev"
+#APPLICATIONS="$APPLICATIONS libgtk2.0-dev libatlas-base-dev gfortran"
+#APPLICATIONS="$APPLICATIONS checkinstall"
+
+
+#apt-get update
+apt-get install -y $APPLICATIONS
+
+
+## Setup soft links to bashrc and vimrc
+#sudo bin/mklinks
+
+## Install pyenv: https://github.com/yyuu/pyenv-installer
+#curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+## The script is run by sudo and sets the wrong owner on pyenv
+#chown -hR jsk:jsk ~/.pyenv/
+#/home/jsk/.pyenv/libexec/pyenv update
+
+## pyenv virtualenv installation
+#git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+#chown -hR jsk:jsk ~/.pyenv/
+
+#mkdir pysh
+#pyenv virtualenv system pysh
+#cd pysh
+#pyenv install 3.3.6 3.4.4 3.5.1 pypy-4.0.1
