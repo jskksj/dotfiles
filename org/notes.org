@@ -28,18 +28,17 @@
 *** I still need to actually use stow, but I might as well have it on the system.
     apt-get -y update
     apt-get -y install stow
+    Node.js has been installed in the ~/bin folder.
+*** Install npm into ~/bin
+    ln -s node.js/npm ~/bin/npm
 *** I did try running the latest emacs from git but the newest version does not work with spacemacs.
     apt-get install -y emacs
 *** I ran emacs to install spacemacs.
     git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
     And then reran emacs to update with my own init file.
-    ln -s ~/.spacemacs ~/dotfiles/spacemacs
+    This is wrong but the right thing is in the install file. ln -s ~/.spacemacs ~/dotfiles/spacemacs
 
     node.js has been install from the tarball on nodejs.org.  I then symlinked the binarys in the tarball bin to my ~/bin/ folder.
-*** Source Code Pro font installation.
-    npm install git://github.com/adobe-fonts/source-code-pro.git#release
-
-    ln -s ~/node_modules/source-code-pro/ ~/.fonts
 *** Now that npm is running install the various libraries needed for HTML and JavaScript development.
     :LOGBOOK:
     CLOCK: [2017-08-03 Thu 15:18]
@@ -48,6 +47,10 @@
     npm install -g tern
     npm install -g js-beautify
     npm install -g jshint
+*** Source Code Pro font installation.
+    npm install git://github.com/adobe-fonts/source-code-pro.git#release
+
+    ln -s ~/node_modules/source-code-pro/ ~/.fonts
 *** Install elm just for kicks.
     npm install -g elm
     After that softlink all the elm executables to ~/bin/
