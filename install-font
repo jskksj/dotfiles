@@ -1,0 +1,3 @@
+npm install git://github.com/adobe-fonts/source-code-pro.git#release
+ln -s ~/node_modules/source-code-pro/ ~/.fonts
+`

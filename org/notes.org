@@ -29,8 +29,6 @@
     apt-get -y update
     apt-get -y install stow
     Node.js has been installed in the ~/bin folder.
-*** Install npm into ~/bin
-    ln -s node.js/npm ~/bin/npm
 *** I did try running the latest emacs from git but the newest version does not work with spacemacs.
     apt-get install -y emacs
 *** I ran emacs to install spacemacs.
@@ -39,6 +37,7 @@
     This is wrong but the right thing is in the install file. ln -s ~/.spacemacs ~/dotfiles/spacemacs
 
     node.js has been install from the tarball on nodejs.org.  I then symlinked the binarys in the tarball bin to my ~/bin/ folder.
+*** Setup git to use ssh from the github help files
 *** Now that npm is running install the various libraries needed for HTML and JavaScript development.
     :LOGBOOK:
     CLOCK: [2017-08-03 Thu 15:18]
@@ -112,6 +111,7 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
    
    #+END_SRC
 ** org-mode HTML5 export
+   What now brown cow?
 ** It looks like it is not practical to write literate HTML code.
 *** Constructing a basic template
     I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings   
