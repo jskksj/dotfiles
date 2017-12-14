@@ -1,4 +1,7 @@
-git init --bare $HOME/.dot
-alias dotconfig='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
-dotconfig dotconfig --local status.showUntrackedFiles no
-echo "alias dotconfig='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'" >> $HOME/.bashrc
+#!/usr/bin/env sh
+#use git to manage dotfiles directly. https://news.ycombinator.com/item?id=11071754
+
+git init --bare $HOME/.dot                                                                   # git working commands go here.
+alias gitdot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'                          # new git command just for dotfiles.
+gitdot gitdot --local status.showUntrackedFiles no                                           # hide files we are not explicitly tracking yet.
+echo "alias gitdot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'" >> $HOME/.bashrc
