@@ -205,7 +205,7 @@ Here is a sample Hello World function.
   [[/home/kivy/GitHub/WebDeveloperBootcamp/]]
 ** design-develop-killer-websites-html5-css3
    [[/home/dev/GitHub/design-develop-killer-websites-html5-css3][design-develop-killer-websites-html5-css3]]
-** Web apps are not real applications; they are really websites that, 
+** Web apps are not real applications; they are really websites that,
    in many ways, look and feel like native applications, but are not [[https://www.nngroup.com/articles/mobile-native-apps/][implemented]] as such.
 ** Working with HTML5/CSS3
 *** Beware of CSS colors
