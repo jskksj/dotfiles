@@ -110,14 +110,14 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
    | drwxr-xr-x |  4 | kivy | vboxsf | 4096 | Jul | 19 | 22:47 | shell |
 
    #+BEGIN_SRC sh
-   
+
    #+END_SRC
 ** org-mode HTML5 export
    What now brown cow?
 ** It looks like it is not practical to write literate HTML code.
 *** Constructing a basic template
-    I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings   
-    
+    I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings
+
 * Working with Spacemacs
 ** How to make spacemacs split window right automatically?
    https://github.com/syl20bnr/spacemacs/issues/5140
@@ -174,7 +174,7 @@ return "Hello, World!";
 Now why did it not return "Hello, World!"?
 ** working with magit
 *** How about an 'auto-commit' mode for selected files like Notes.
-*** Staging chunks of a diff 
+*** Staging chunks of a diff
 **** Stage one.
 ** eLisp
 *** Display a variables value
