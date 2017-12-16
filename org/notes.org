@@ -4,8 +4,10 @@
 ** Finding Business Idea's
    Look in the support forums for other software applications and see if you can solve peoples problems.
 *** A digital online product is highly "scalable"
+** Pete's Mortuary Marketing
+Electronic business cards using Progressive Web Apps.  See [[http://www.startupsfortherestofus.com/episodes/episode-216-how-a-single-founder-launched-a-7-figure-saas-app-with-nate-grahek][Episode 216]] of [[http://www.startupsfortherestofus.com/][Startups for the Rest of Us]] has a good discussion on this for Portrait Photograpers.
 * Dotfiles Organization
-  I have been following some blogs on setting ones dot files up in a well organzied way.  There is a program called [[https://www.gnu.org/software/stow/][stow]], which seems to be just the right thing to automate soft links in the dotfiles folder. 
+  I have been following some blogs on setting ones dot files up in a well organzied way.  There is a program called [[https://www.gnu.org/software/stow/][stow]], which seems to be just the right thing tgithub@simplexapparati.como automate soft links in the dotfiles folder.
 
   I find [[http://keifer.link/projects/dotfiles/dotfiles.html][this]] guys dotfiles org file very attractive, I do not have his css though. And finally I think [[/home/kivy/GitHub/dotfiles-ng][this guy]] has a nice reference to actually using org-mode to organize dotfiles.
 ** GitHub SSH configuration
@@ -212,7 +214,7 @@ Here is a sample Hello World function.
 *** &emdash; was working
     so I had to use the &#8212; entity code.
 **** Interactive Comic HTML5/CSS3
-    
+
 *** clearfix is bizare.
     https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
 ** Writing Browser Extensions
@@ -220,7 +222,7 @@ Here is a sample Hello World function.
     https://developer.chrome.com/extensions Chrome Dev Tools tutorials
     https://developer.mozilla.org/en-US/Add-ons/WebExtensions MDN WebExtensions
 *** Google Chrome Getting Started
-    
+
 * Browser Bookmarks
 
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
