@@ -114,7 +114,10 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
    #+END_SRC
 ** org-mode HTML5 export
    What now brown cow?
-** It looks like it is not practical to write literate HTML code.
+** Who is my simple publishing site for?
+*** One, some one who all ready has some knowledge of emacs
+  Otherwise how would they know org-mode export even exists.
+*** [Wrong] It looks like it is not practical to write literate HTML code.
 *** Constructing a basic template
     I want to build a template like this one https://www.sitepoint.com/a-minimal-html-document-html5-edition/ by export HTML like this http://orgmode.org/manual/HTML-Specific-export-settings.html#HTML-Specific-export-settings
 
