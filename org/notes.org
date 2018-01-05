@@ -186,6 +186,146 @@ Now why did it not return "Hello, World!"?
    https://help.github.com/articles/connecting-to-github-with-ssh/
    GitHub help does not seem to tell everything needed to establish an SSH connection.
    https://help.github.com/articles/caching-your-github-password-in-git/
+*** Working in one repository and not the other.
+
+Working in GitHub/simple-publishing
+#+BEGIN_EXAMPLE
+OpenSSH_7.2p2 Ubuntu-4ubuntu2.2, OpenSSL 1.0.2g  1 Mar 2016
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: Connecting to github.com [192.30.253.112] port 22.
+debug1: Connection established.
+debug1: identity file /home/ai/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
+debug1: Remote protocol version 2.0, remote software version libssh_0.7.0
+debug1: no match: libssh_0.7.0
+debug1: Authenticating to github.com:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ssh-rsa
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+debug1: Host 'github.com' is known and matches the RSA host key.
+debug1: Found key in /home/ai/.ssh/known_hosts:1
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS received
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/ai/.ssh/id_rsa
+debug1: Server accepts key: pkalg ssh-rsa blen 535
+debug1: Authentication succeeded (publickey).
+Authenticated to github.com ([192.30.253.112]:22).
+debug1: channel 0: new [client-session]
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: Sending environment.
+debug1: Sending env LANG = en_US.UTF-8
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+Hi jskksj! You've successfully authenticated, but GitHub does not provide shell access.
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3388, received 2104 bytes, in 0.2 seconds
+Bytes per second: sent 20625.9, received 12809.0
+debug1: Exit status 1
+
+Process /usr/bin/ssh exited abnormally with code 1
+#+END_EXAMPLE
+
+git pull
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+[[https://help.github.com/articles/error-permission-denied-publickey/][Please make sure you have the correct access rights]]
+and the repository exists.
+Working in one repository and not the other.
+
+ssh -vT git@github.com not working in dotfiles
+#+BEGIN_EXAMPLE
+OpenSSH_7.2p2 Ubuntu-4ubuntu2.2, OpenSSL 1.0.2g  1 Mar 2016
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: Connecting to github.com [192.30.253.113] port 22.
+debug1: Connection established.
+debug1: identity file /home/ai/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/ai/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2
+debug1: Remote protocol version 2.0, remote software version libssh_0.7.0
+debug1: no match: libssh_0.7.0
+debug1: Authenticating to github.com:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ssh-rsa
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+debug1: Host 'github.com' is known and matches the RSA host key.
+debug1: Found key in /home/ai/.ssh/known_hosts:1
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS received
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/ai/.ssh/id_rsa
+debug1: Server accepts key: pkalg ssh-rsa blen 535
+debug1: Authentication succeeded (publickey).
+Authenticated to github.com ([192.30.253.113]:22).
+debug1: channel 0: new [client-session]
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: Sending environment.
+debug1: Sending env LANG = en_US.UTF-8
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+Hi jskksj! You've successfully authenticated, but GitHub does not provide shell access.
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3388, received 2104 bytes, in 0.3 seconds
+Bytes per second: sent 11755.6, received 7300.4
+debug1: Exit status 1
+
+Process /usr/bin/ssh exited abnormally with code 1
+#+END_EXAMPLE
+
+I did have the remote origin set wrong, it was just github rather than git@github.
+
 ** eLisp
 *** Display a variables value
 #+BEGIN_SRC emacs-lisp
