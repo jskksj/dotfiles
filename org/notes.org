@@ -172,10 +172,15 @@ return "Hello, World!";
 : Hello
 
 Now why did it not return "Hello, World!"?
-** working with magit
+** Working with magit
 *** How about an 'auto-commit' mode for selected files like Notes.
 *** Staging chunks of a diff
 **** Stage one.
+** Working with GitHub
+*** GitHub SSH configuration
+   https://help.github.com/articles/connecting-to-github-with-ssh/
+   GitHub help does not seem to tell everything needed to establish an SSH connection.
+   https://help.github.com/articles/caching-your-github-password-in-git/
 ** eLisp
 *** Display a variables value
 #+BEGIN_SRC emacs-lisp
