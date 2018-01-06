@@ -9,6 +9,7 @@ Electronic business cards using Progressive Web Apps.  See [[http://www.startups
 * Working with *nix
 ** Working with ssh
 *** How to back up ssh configuration
+[[https://askubuntu.com/questions/88712/how-do-i-backup-ssh-keys#88717][askubuntu:]] How do I backup ssh keys? And another question on copying the [[https://superuser.com/questions/532040/copy-ssh-keys-from-one-server-to-another-server/532079][keys.]]
 
 ** Dotfiles Organization
 ***
