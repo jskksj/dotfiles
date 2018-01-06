@@ -133,6 +133,12 @@ http://orgmode.org/manual/Easy-templates.html#Easy-templates
 
    I had the font set to 22 so I could read the screen from a distance. I changed it 13 and got the same results when reading documention on the variables.  Then I changed it 18 and got a right window when I looked at a larger help file. Running an apropos on the variable splits horizontally while following links splits vertically.
 * Software Development                                                  :WIP:
+** Document Driven Design
+- [[https://www.ybrikman.com/writing/2014/05/05/you-are-what-you-document/][You are what you document]] has a good overview of what you need to do go from the README to the code comments.
+- [[https://opensource.com/open-organization/17/1/repo-tells-a-story][What your code repository tells about you]] This one lays out some general points on the README and how you documentation can tell a story.
+- [[https://opensource.com/open-organization/17/10/readme-maturity-model][Your step-by-step guide to documentation]] Now this page goes into different levels of README files, from practically nothing to enterprize level.
+- [[http://www.writethedocs.org/][Write The Docs]] is an entire website dedicated to writing you documentation.
+- [[https://zachholman.com/posts/open-source-marketing/][Open Source Does Not Just Market Itself]] talks about Document Driven Marketing.
 ** Working with org-modes Babel.
 From Babel's main page I downloaded an academic paper on using org-mode for ReproducibleResearch.
 ** Reprogram your Facebook or any other WebApp!
@@ -373,7 +379,9 @@ Here is a sample Hello World function.
     https://developer.chrome.com/extensions Chrome Dev Tools tutorials
     https://developer.mozilla.org/en-US/Add-ons/WebExtensions MDN WebExtensions
 *** Google Chrome Getting Started
-
+* Working with org-mode
+** Markdown export menu is missing
+[[https://stackoverflow.com/questions/22988092/emacs-org-mode-export-markdown][require 'ox-md nil t]] Check out the [[https://orgmode.org/worg/exporters/ox-overview.html][ new export menu]].
 * Browser Bookmarks
 
   http://www.karl-voit.at/2014/08/10/bookmarks-with-orgmode/
